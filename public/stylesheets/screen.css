@@ -1,0 +1,230 @@
+/* v1.0 | 20080212 */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  margin: 25px;
+  font-family: Georgia, Times New Roman, Serif;
+  color: #333333;
+}
+h1 {
+  font-size: 1.5em;
+  margin: 0 0 10px 0;
+}
+h2 {
+  font-size: 1.25em;
+  margin: 0 0 50px 0;
+}
+#questions {
+  width: 700px;
+  font-size: 0.9em;
+  position: relative;
+}
+#questions * {
+  float: left;
+}
+#questions li.question {
+  height: 40px;
+  border-bottom: 1px solid #eaeaea;
+}
+#questions li.question ul li {
+  display: block;
+  padding: 15px 10px;
+}
+#questions li.question ul li.text, #questions li.question ul li.text a {
+  width: 460px;
+}
+#questions li.question ul li.option, #questions li.question ul li.option a {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  text-indent: -9999px;
+}
+#questions li.question ul li.option.yes a {
+  background: url('../images/choice_sprite.png') 0 -50px no-repeat;
+}
+#questions li.question ul li.option.yes a.pick, #questions li.question ul li.option.yes a:hover {
+  background: url('../images/choice_sprite.png') 0 0px no-repeat;
+}
+#questions li.question ul li.option.maybe a {
+  background: url('../images/choice_sprite.png') -50px -50px no-repeat;
+}
+#questions li.question ul li.option.maybe a.pick, #questions li.question ul li.option.maybe a:hover {
+  background: url('../images/choice_sprite.png') -50px 0px no-repeat;
+}
+#questions li.question ul li.option.no a {
+  background: url('../images/choice_sprite.png') -100px -50px no-repeat;
+}
+#questions li.question ul li.option.no a.pick, #questions li.question ul li.option.no a:hover {
+  background: url('../images/choice_sprite.png') -100px 0px no-repeat;
+}
+#questions li.question.alt {
+  background: #eaeaea;
+}
+#questions li.question.hover {
+  background: #cccccc;
+}
+#questions li.question.upcoming {
+  color: #cccccc;
+}
+#questions li.question.upcoming a {
+  display: none;
+}
+#questions li.question.focus {
+  background: #ffffff;
+  border: none;
+}
+#questions li.question.focus a {
+  display: none;
+  z-index: 100;
+  position: relative;
+}
+#questions li.question.action {
+  border: 1px solid red;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+#focus_field {
+  display: block;
+  border: 2px solid #999999;
+}
+#focus_field ul {
+  float: right;
+  margin: 6px;
+}
+#focus_field ul li {
+  display: inline;
+}
+#progress_bar {
+  display: block;
+  margin: 0 0 20px 0;
+  border: 1px solid #eaeaea;
+}
+#progress_bar span {
+  display: block;
+  padding: 3px;
+  margin: 0 5px 0 0;
+  font-size: 0.8em;
+  float: left;
+}
+#progress_bar .meter {
+  position: absolute;
+  z-index: -1;
+}
+/* Troubleshooting */
+dl#output {
+  width: 200px;
+  margin: 0 0 50px 0;
+}
+dl#output * {
+  width: 100px;
+  padding: 3px 0;
+  display: block;
+}
+dl#output dt {
+  font-weight: bold;
+  float: left;
+}
+dl#output dd {
+  float: right;
+}
